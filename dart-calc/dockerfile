@@ -1,0 +1,7 @@
+FROM google/dart
+
+WORKDIR /usr/src/app
+
+COPY calc.dart .
+
+CMD ["dart", "calc.dart"]

@@ -1,0 +1,10 @@
+
+FROM openjdk:11
+
+WORKDIR /usr/src/app
+
+COPY game.java .
+
+RUN javac game.java
+
+CMD ["java", "game"]
